@@ -50,7 +50,7 @@ const ShopPage = () => {
   };
 
   const products = [
-    { id: 1, name: 'Door-Mat1', price: 199, category: 'Pocha', image: process.env.PUBLIC_URL + '/images/door-mat.jpg' },
+    { id: 1, name: 'Door-Mat1', price: 199, category: 'Pocha', image: process.env.PUBLIC_URL + './Images/door-mat.jpg' },
     { id: 2, name: 'Aamras(500gm)', price: 500, category: 'Chocolate', image: process.env.PUBLIC_URL + '/images/aamras.jpg' },
     { id: 3, name: 'Customised-Bar(15Letters)', price: 200, category: 'Chocolate', image: process.env.PUBLIC_URL + '/images/customisedbar.jpg' },
     { id: 4, name: 'Dairy Milk(2bar)', price: 60, category: 'Chocolate', image: process.env.PUBLIC_URL + '/images/dairymilk.jpg' },
