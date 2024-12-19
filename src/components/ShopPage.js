@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 
 const ShopPage = () => {
   const [cart, setCart] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState('Pocha');
-  const [categories, setCategories] = useState(['Pocha', 'Chocolate']);  // Track existing categories dynamically
+  const [selectedCategory, setSelectedCategory] = useState('Door Mats');
+  const [categories, setCategories] = useState(['Door Mats', 'Chocolate']);  // Track existing categories dynamically
   const navigate = useNavigate();
 
   const increaseQuantity = (product) => {
