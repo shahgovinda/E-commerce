@@ -1,23 +1,38 @@
+/* App.css */
+
 .App-header {
   background-color: #282c34;
   padding: 20px 0;
   text-align: center;
 }
 
+/* Navbar Styling */
 .navbar {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+}
+
+.nav-links-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+  padding: 10px 0;
+  width: 100%;
+  flex-wrap: nowrap;
+  margin: 0 20px;
 }
 
 .navbar a {
   text-decoration: none;
   color: white;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: bold;
-  position: relative;
-  padding: 10px 20px;
+  padding: 10px 15px;
   transition: color 0.3s ease;
+  white-space: nowrap; /* Prevent text from wrapping */
 }
 
 .navbar a:hover {
@@ -62,5 +77,28 @@
   }
   100% {
     box-shadow: 0 0 8px #FFD824, 0 0 20px #FFD824, 0 0 30px #FFD824;
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .navbar a {
+    font-size: 0.9em;
+    padding: 8px 12px;
+  }
+
+  .nav-links-container {
+    gap: 10px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 8px 0;
+  }
+
+  .nav-links-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+
+  .navbar a:hover {
+    color: #FF9800;
   }
 }
