@@ -34,7 +34,7 @@ const AboutPage = () => {
       </div>
 
       {/* CSS Styling */}
-      <style>
+     <style>
         {`
           /* Global Container */
           .about-page {
@@ -168,8 +168,17 @@ const AboutPage = () => {
               font-size: 1em;
             }
 
+            .about-content button {
+              font-size: 1em;
+              padding: 10px 20px;
+            }
+
             .instagram-section h2 {
               font-size: 2em;
+            }
+
+            .instagram-section p {
+              font-size: 1em;
             }
           }
 
@@ -182,8 +191,17 @@ const AboutPage = () => {
               font-size: 0.9em;
             }
 
+            .about-content button {
+              font-size: 0.9em;
+              padding: 8px 16px;
+            }
+
             .instagram-section h2 {
               font-size: 1.8em;
+            }
+
+            .instagram-section p {
+              font-size: 0.9em;
             }
           }
         `}
