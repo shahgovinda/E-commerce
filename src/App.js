@@ -16,11 +16,13 @@ function App() {
         <header className="App-header">
           {/* Navigation Links */}
           <nav className="navbar">
-            <a href="/">Home</a>
-            <a href="/shop">Shop</a>
-            <a href="/about">About</a>
-            <a href="/contact">Contact</a>
-            <a href="/cart">Cart</a>
+            <div className="nav-links-container">
+              <a href="/">Home</a>
+              <a href="/shop">Shop</a>
+              <a href="/about">About</a>
+              <a href="/contact">Contact</a>
+              <a href="/cart">Cart</a>
+            </div>
           </nav>
         </header>
 
