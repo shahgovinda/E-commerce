@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 
 const ShopPage = () => {
   const [cart, setCart] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState('Pocha');
-  const [categories, setCategories] = useState(['Pocha', 'Chocolate']);  // Track existing categories dynamically
+  const [selectedCategory, setSelectedCategory] = useState('Door-Mats');
+  const [categories, setCategories] = useState(['Door-Mats', 'Chocolate']);  // Track existing categories dynamically
   const navigate = useNavigate();
 
   const increaseQuantity = (product) => {
@@ -50,7 +50,7 @@ const ShopPage = () => {
   };
 
   const products = [
-    { id: 1, name: 'Door-Mat1', price: 199, category: 'Pocha', image: process.env.PUBLIC_URL + './Images/door-mat.jpg' },
+    { id: 1, name: 'Door-Mat1', price: 199, category: 'Door-Mats', image: process.env.PUBLIC_URL + './Images/door-mat.jpg' },
     { id: 2, name: 'Aamras(500gm)', price: 500, category: 'Chocolate', image: process.env.PUBLIC_URL + './Images/aamras.jpg' },
     { id: 3, name: 'Customised-Bar(15Letters)', price: 200, category: 'Chocolate', image: process.env.PUBLIC_URL + './Images/customisedbar.jpg' },
     { id: 4, name: 'Dairy Milk(2bar)', price: 60, category: 'Chocolate', image: process.env.PUBLIC_URL + './Images/dairymilk.jpg' },
@@ -71,14 +71,14 @@ const ShopPage = () => {
     { id: 19, name: 'Valentine Special(10pc)', price: 80, category: 'Chocolate', image: process.env.PUBLIC_URL + './Images/valentinespecial.jpg' },
 
     // New Pocha products
-    { id: 20, name: 'Doormat 2', price: 199, category: 'Pocha', image: process.env.PUBLIC_URL + './Images/doormat2.jpg' },
-    { id: 21, name: 'Doormat 3', price: 249, category: 'Pocha', image: process.env.PUBLIC_URL + './Images/doormat3.jpg' },
-    { id: 22, name: 'Doormat 4', price: 299, category: 'Pocha', image: process.env.PUBLIC_URL + './Images/doormat4.jpg' },
-    { id: 23, name: 'Doormat 5', price: 349, category: 'Pocha', image: process.env.PUBLIC_URL + './Images/doormat5.jpg' },
-    { id: 24, name: 'Doormat 6', price: 399, category: 'Pocha', image: process.env.PUBLIC_URL + './Images/doormat6.jpg' },
-    { id: 25, name: 'Doormat 7', price: 449, category: 'Pocha', image: process.env.PUBLIC_URL + './Images/doormat7.jpg' },
-    { id: 26, name: 'Doormat 8', price: 499, category: 'Pocha', image: process.env.PUBLIC_URL + './Images/doormat8.jpg' },
-    { id: 27, name: 'Doormat 9', price: 549, category: 'Pocha', image: process.env.PUBLIC_URL + './Images/doormat9.jpg' },
+    { id: 20, name: 'Doormat 2', price: 199, category: 'Door-Mats', image: process.env.PUBLIC_URL + './Images/doormat2.jpg' },
+    { id: 21, name: 'Doormat 3', price: 249, category: 'Door-Mats', image: process.env.PUBLIC_URL + './Images/doormat3.jpg' },
+    { id: 22, name: 'Doormat 4', price: 299, category: 'Door-Mats', image: process.env.PUBLIC_URL + './Images/doormat4.jpg' },
+    { id: 23, name: 'Doormat 5', price: 349, category: 'Door-Mats', image: process.env.PUBLIC_URL + './Images/doormat5.jpg' },
+    { id: 24, name: 'Doormat 6', price: 399, category: 'Door-Mats', image: process.env.PUBLIC_URL + './Images/doormat6.jpg' },
+    { id: 25, name: 'Doormat 7', price: 449, category: 'Door-Mats', image: process.env.PUBLIC_URL + './Images/doormat7.jpg' },
+    { id: 26, name: 'Doormat 8', price: 499, category: 'Door-Mats', image: process.env.PUBLIC_URL + './Images/doormat8.jpg' },
+    { id: 27, name: 'Doormat 9', price: 549, category: 'Door-Mats', image: process.env.PUBLIC_URL + './Images/doormat9.jpg' },
   ];
 
   // Filter products based on selected category
